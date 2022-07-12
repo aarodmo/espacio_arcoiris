@@ -1,0 +1,275 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.encabezado__lista__item{
+    flex:auto;
+    color: gold;
+    border-right: 1px solid black;
+    background-color: palevioletred;
+    width: 60px;
+    margin: 0;
+}
+
+.encabezado__lista{
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    list-style: none;
+    background-color: palevioletred;
+    text-align: center;
+    display:flex; 
+    justify-content: space-evenly;  
+    }
+
+
+.encabezado__lista__item a{
+    color: gold;
+    text-decoration: none;
+    font-family:'Amatic SC', cursive;
+    letter-spacing: 5px;
+    word-spacing: 5px;
+    line-height:3;}
+
+.textoComun{
+    color: gold ;
+    text-align:center;
+    line-height: 2px;
+    letter-spacing: 2px;
+
+}
+
+/* .principal__arco{
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    list-style: none;
+    background-color:black;
+    text-align: center;
+    display:flex;
+
+} */
+.principal__arco__img{
+    flex: auto;
+    text-align: center;
+   /*  padding-left: 425px; */
+    margin-top: 10px;
+}
+/* .principal__arco__img:hover{
+    transform: scale(1);
+    transition: all;
+
+}Animacion logo index */
+
+/* .main{
+    background-color: pink;} */
+
+
+.layout{
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: auto;}
+
+    iframe{
+        width: 600px;
+        height: 500px;
+    margin: 50px;
+    text-align: center;
+    }
+
+/* mediaqueri */
+@media screen and (max-width: 768px){
+    .layout{
+        background-color: palevioletred
+}
+@media screen and (max-width: 600px) {
+    iframe{
+        width: 300px;
+        height: 150px;
+    }
+    .grilla{
+        height: 50vh; 
+        justify-content:center;
+         align-content:flex-start;
+    }
+    .logoArco{
+        width: 300px;
+        height: 150px;
+    }
+}
+@media screen and (max-width: 320px){
+    .layout{
+        background-color: yellow;
+    
+}
+
+    
+}
+.encabezado__lista{
+    flex-direction: column;
+    height: 300px;
+
+}
+.encabezado__lista__item{
+    border-right: none;
+}
+
+}
+.instagram{
+    background-color: black;
+    width: 550px;
+}
+.nav ul{
+    list-style:none ;}
+
+.textoComun{
+    font-family: 'Amatic SC', cursive;
+}
+
+    .textoImagen{
+        color: gold;
+        font-family:'Amatic SC', cursive;
+    text-align: center; }
+
+        .h1{
+            color: gold;
+            font-family:'Amatic SC', cursive;
+            text-decoration: underline;
+            text-align: center;
+            margin: 5px;
+        
+        }
+            
+            .logoArco{
+        text-align: center;
+             } 
+
+        .insta{
+            width: 30px;
+            border-radius:20px;
+        
+               }
+
+       .loguito{
+            max-width: 500px;
+            max-height: 600px; }
+
+        .piePagina{
+            text-align: center; 
+           margin: 90px; 
+        }
+    
+            .fotos{
+                text-align: center;}
+            
+            .tamañoFoto{
+                max-width: 250px;
+                max-height: 300px}
+            .opciones{
+                color: gold;}
+
+                .formulario{
+                    height: 500px;
+                    margin-top: 100px;
+                }
+
+
+                .main{
+                    text-align: center;
+                }
+                /* GRID */
+            .grilla__item{
+                background-color: black;
+                border: solid 1px rgb(227, 206, 84);
+                border-radius: 6px;
+
+                display: flex;
+                justify-content: center;
+                 align-items: center;    
+                 }
+
+            /* .grilla{
+                display: grid; */
+               /*  grid-template-columns: repeat(auto-fill,
+                mimax(150px, 200px));
+                grid-auto-rows: mimax(80px,auto);
+                gap:20px;
+                grid-auto-flow: dense; */
+            
+                .grilla{
+                display: grid;
+                grid-template-columns:auto auto auto ;
+                grid-template-rows:auto auto auto ;
+                gap:20px 20px;
+                padding: 5px; 
+               height:  100vh; 
+               justify-content:center;
+                align-content:flex-start;   
+            }
+
+            /*  .item1{
+                grid-column: 1/2;
+                grid-row: 1/2;
+            }   */
+        
+
+
+/*   .wide{
+    grid-column: span 2;
+ }
+ .tall{
+    grid-row: span 2;
+ }  */
+.layout{
+display:grid;
+grid-template-areas: 
+'header header header header'
+'main main main main'
+'footer footer footer footer';
+    }
+    .encabezado{
+        grid-area: header;
+        background-color: palevioletred;
+    }
+    .principal{
+        grid-area: main;
+        background-color: black;
+        text-align: center;
+    }
+    .pie{
+        grid-area: footer;
+        background-color: black;
+        text-align: center;
+    }
+    /* .encabezado__lista__item:hover{
+        transform: scale(1.5);
+        transition: all 1s;
+
+    /* } animacion esto va para trabajar en el Git */
+    /* 
+    .item1:hover{
+        transform: scale(1.5) rotate(360deg);
+        transition: all 1s;
+    } 
+    .item2:hover{
+        transform: scale(1.5) rotate(360deg);
+        transition: all 1s;
+    } 
+    .item3:hover{
+        transform: scale(1.5) rotate(360deg);
+        transition: all 1s;
+    } 
+    .item4:hover{
+        transform: scale(1.5) rotate(360deg);
+        transition: all 1s;
+    } 
+    .item5:hover{
+        transform: scale(1.5) rotate(360deg);
+        transition: all 1s;
+    } 
+    .item6:hover{
+        transform: scale(1.5) rotate(360deg);
+        transition: all 1s;
+    }  */
+  
