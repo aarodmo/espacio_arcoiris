@@ -10,53 +10,70 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../style.css">
     <title>Espacio Arcoiris|Quienes somos</title>
 </head>
 
 <body class="layout">
-
-    <header class="encabezado">
-        <nav>
-            <ul class="encabezado__lista">
-                <li class="encabezado__lista__item"><a href="../index.html" class="encabezado__lista__link"> Inicio </a></li>
-                <li class="encabezado__lista__item"><a href="#" class="encabezado__lista__link"> Quienes somos</a></li>
-                <li class="encabezado__lista__item"><a href="./talleres.html" class="encabezado__lista__link"> Talleres</a></li>
-                <li class="encabezado__lista__item"><a href="./ubicacion.html" class="encabezado__lista__link"> Ubicación</a></li>
-                <li class="encabezado__lista__item"><a href="./contacto.html" class="encabezado__lista__link"> Contacto</a> </li>
-            </ul> 
-        </header>
+    <header class="navegador">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+       <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+             <div class="navbar-collapse collapse" id="navbarSupportedContent">
+               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                 <li class="nav-item">
+                   <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="#">Quienes somos</a>
+                   <li class="nav-item">
+                       <a class="nav-link" href="./talleres.html">Talleres</a>                      </li>
+                     <li class="nav-item">
+                       <a class="nav-link" href="./ubicacion.html">Ubicacion</a>                      </li>
+                     <li class="nav-item">
+                       <a class="nav-link" href="./contacto.html">Contacto</a>
+                     </li>
+               </ul>
+             </div>
+           </div>
+         </nav>
+       </header>
         </nav>  
     </header>
     <main class="principal">
         <h1 class="h1">Quienes Somos</h1>
-        <Section>
-        <!-- Imagen equipo Espacio Arcoiris -->
-        <div class="fotos">
-            <img src="../imagen-principal/mujer1.png" alt="Ana creadora del espacio">
-        </div>
-        <div>
-            <p class="textoImagen">Brevemente quiero compartirte un poquito de cómo el andar de la vida me trajo hasta aquí.  Mi nombre es Ana y gracias a una queridísima amiga que ya regresó a la fuente,  en el 2010 me inicié en el mundo del Yoga,  hice el instructorado de Hatha Yoga  y al mes ya estaba comenzando a dar clases,  cuando fuí mamá,  mi hija me inspiró a capacitarme en Yoga para niños y como soy inquieta y buscadora, seguí haciendo talleres en Yoga terapéutico hasta qué conocí Terapia Postural Activa y tomé la formación de terapista con la Lic. Silvina Lambertini y actualmente me desempeño dando clases de TPA. También me formé en Pilates Aéreo. 
-                Sabes qué me motiva a hacer estas actividades? Siento que puedo acercarle a las personas que llegan a  las clases,  distintas posibilidades de que reconozcan  sus cuerpos  y sus  infinitas capacidades de movimiento para encontrarse y cuidarse porque cuando somos conscientes de nosotros mismos,  comenzamos a fluir y eso nos empodera  y ganamos bienestar, sabiendo que el cuidado de la salud se inicia por uno mismo. Mi propósito es entregar, desde la empatía,  el amor y  la contención, sabiendo que estoy tratando con otro Ser que llega buscando una respuesta, todo lo que  aprendí y sigo aprendiendo a cada Ser que elige hacer Actividades conmigo. Nos seguimos encontrando desde el movimiento y la salud</p>
-
-        </div>
-        <div class="fotos">
-            <img src="../imagen-principal/mujer2.png" alt="Claudia co-creadora del espacio">
-            <p class="textoImagen"> Desde muy chica jugaba con mis alumnos imaginarios. Era de esas maestras coquetas, que usaban zapatos altos. Le usaba a mi mamá los zapatos tacos aguja. Copiaba a mis maestras. Como ellas eran en el aula, así era yo, pero en mi aula imaginaría. 
+        <Section class="article_container">
+            <div class="container">
+            <article class="row">
+                <img class="col-sm-12 col-lg-4" src="../imagen-principal/mujer1.png" alt="Ana creadora del espacio">
+                <p class="col-sm-12 col-lg 8">
+                    Brevemente quiero compartirte un poquito de cómo el andar de la vida me trajo hasta aquí.  Mi nombre es Ana y gracias a una queridísima amiga que ya regresó a la fuente,  en el 2010 me inicié en el mundo del Yoga,  hice el instructorado de Hatha Yoga  y al mes ya estaba comenzando a dar clases,  cuando fuí mamá,  mi hija me inspiró a capacitarme en Yoga para niños y como soy inquieta y buscadora, seguí haciendo talleres en Yoga terapéutico hasta qué conocí Terapia Postural Activa y tomé la formación de terapista con la Lic. Silvina Lambertini y actualmente me desempeño dando clases de TPA. También me formé en Pilates Aéreo. 
+                    Sabes qué me motiva a hacer estas actividades? Siento que puedo acercarle a las personas que llegan a  las clases,  distintas posibilidades de que reconozcan  sus cuerpos  y sus  infinitas capacidades de movimiento para encontrarse y cuidarse porque cuando somos conscientes de nosotros mismos,  comenzamos a fluir y eso nos empodera  y ganamos bienestar, sabiendo que el cuidado de la salud se inicia por uno mismo. Mi propósito es entregar, desde la empatía,  el amor y  la contención, sabiendo que estoy tratando con otro Ser que llega buscando una respuesta, todo lo que  aprendí y sigo aprendiendo a cada Ser que elige hacer Actividades conmigo. Nos seguimos encontrando desde el movimiento y la salud.
+                </p>
+                </article>
+            </div>
+            <div class="container">
+        <article class="row">
+            <img class="col-sm-12 col-lg-4" src="../imagen-principal/mujer2.png" alt="Claudia co-creadora del espacio">
+            <p class="col-sm-12 col-lg 8">
+                 Desde muy chica jugaba con mis alumnos imaginarios. Era de esas maestras coquetas, que usaban zapatos altos. Le usaba a mi mamá los zapatos tacos aguja. Copiaba a mis maestras. Como ellas eran en el aula, así era yo, pero en mi aula imaginaría. 
                 Siempre supe lo que quería ser cuando fuese grande. Y fue así como en el año 2003, me recibí de maestra de grado.
-                El tiempo pasaba y las experiencias dentro del aula, me aydaban a conectar con cada niño y niña, con la parte más emocional. Haciéndome eco de sus problemas, de lo que ellas y ellos vivían, de sus realidades,  de su vida. Cada tarde regresaba a mi casa pensando cómo y de qué manera los podías ayudar.   Y buscando la manera de que puedan sentirse contenidos,  acompañados y cuidados. Porque sus realidades dolían el alma. Yo deseaba que el mundo sea un poquito más justo, más amoroso para esos niños y niñas. Veía las miserias humanas dentro de cada escuela, pero también veía las grandezas humanas en pequeñas personitas. Cuánto me enseñaban, cuánto aprendía. Y así fue como en mi mundo soñaba con la escuela en donde el amor sea el pilar. En donde el aprender sea un momento de conexión y disfrute. Y tras ese sueño o anhelo, pasé de escuela en escuela.  En la búsqueda de un lugar cálido ,humano y respetuoso.
+                <!-- El tiempo pasaba y las experiencias dentro del aula, me aydaban a conectar con cada niño y niña, con la parte más emocional. Haciéndome eco de sus problemas, de lo que ellas y ellos vivían, de sus realidades,  de su vida. Cada tarde regresaba a mi casa pensando cómo y de qué manera los podías ayudar.   Y buscando la manera de que puedan sentirse contenidos,  acompañados y cuidados. Porque sus realidades dolían el alma. Yo deseaba que el mundo sea un poquito más justo, más amoroso para esos niños y niñas. Veía las miserias humanas dentro de cada escuela, pero también veía las grandezas humanas en pequeñas personitas. Cuánto me enseñaban, cuánto aprendía. Y así fue como en mi mundo soñaba con la escuela en donde el amor sea el pilar. En donde el aprender sea un momento de conexión y disfrute. Y tras ese sueño o anhelo, pasé de escuela en escuela.  En la búsqueda de un lugar cálido ,humano y respetuoso.
                 Y cuando decidí dejar de buscar, emprender un nuevo rumbo y cerrar un ciclo con respecto a la educación,  apareció la oportunidad de tener ese pedacito de mi mundo utópico, pero esta vez en casa. Comencé a dar clases de acompañamiento pedagógico en mi casa. Pero esta vez con el deseo más fuerte de tener mi propio espacio, mi propia aula llena de colores, los colores de un arco iris.
-                Y así fue que, cuando no buscaba nada, apareció ESPACIO ARCO IRIS. En donde puedo brindar esa escuelita en valores wue tanto deseaba, y dejando de lado lo burocrático e irracional de un sistema que nunca voy a lograr entender.
+                Y así fue que, cuando no buscaba nada, apareció ESPACIO ARCO IRIS. --> En donde puedo brindar esa escuelita en valores wue tanto deseaba, y dejando de lado lo burocrático e irracional de un sistema que nunca voy a lograr entender.
                 Soy Claudia, una soñadora y apasionada. Aquella que lucha por alcanzar sus metas, saliendo de su zona de confort. Siendo el miedo un motor, que ayuda a movilizar y a no permitirme caer, aún cuando crea que lo wue me propongo es inalcanzable. No existe un techo, sólo el que nosotros/as mismas nos ponemos.</p>
+            </p>
+        </article>
         </div>
         </Section>
         </main>
-        <footer class="pie">
-            <a href="https://instagram.com/espacio_arcoiris07?igshid=YmMyMTA2M2Y=" target="_blank" >
-                <img src="../imagen-principal/instagram.npg.jpg" alt="Instagram" class="insta">
-            </a>
-
+        <footer></footer>
         </footer>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
         </body>
 </html>
     

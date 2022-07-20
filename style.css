@@ -3,8 +3,8 @@
     padding: 0;
 }
 
-.encabezado__lista__item{
-    flex:auto;
+/* .encabezado__lista__item{
+    flex:initial;
     color: gold;
     border-right: 1px solid black;
     background-color: palevioletred;
@@ -20,7 +20,7 @@
     background-color: palevioletred;
     text-align: center;
     display:flex; 
-    justify-content: space-evenly;  
+    flex-grow: initial;  
     }
 
 
@@ -31,7 +31,7 @@
     font-size: large;
     letter-spacing: 5px;
     word-spacing: 5px;
-    line-height:3;}
+    line-height:3;} */
 
 .textoComun{
     color: gold ;
@@ -117,12 +117,40 @@
 }
 
 }
+.navbar{
+    background-color: palevioletred;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    display:flex; 
+    flex-grow: initial;
+}
+.navbar-collapse{
+    background-color: palevioletred;
+    flex-grow: initial;
+}
+.navbar-dark .navbar-nav .nav-link{
+    color: gold;
+    font-size: 1.4rem;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+    display:flex; 
+    flex-grow: initial;
+}
+.container-fluid{
+    padding: 0;
+    margin-right: 0;
+    margin-left: auto;
+    width: fit-content;
+
+}
 .instagram{
     background-color: black;
     width: 550px;
 }
-.nav ul{
-    list-style:none ;}
+
 
 .textoComun{
     font-family: 'Amatic SC', cursive;
@@ -157,10 +185,10 @@
             max-width: 500px;
             max-height: 600px; }
 
-        .piePagina{
+        /* .piePagina{
             text-align: center; 
            margin: 90px; 
-        }
+        } */
     
             .fotos{
                 text-align: center;}
@@ -181,7 +209,7 @@
                     text-align: center;
                 }
                 /* GRID */
-            .grilla__item{
+            /* .grilla__item{
                 background-color: black;
                 border: solid 1px rgb(227, 206, 84);
                 border-radius: 6px;
@@ -189,7 +217,7 @@
                 display: flex;
                 justify-content: center;
                  align-items: center;    
-                 }
+                 } */
 
             /* .grilla{
                 display: grid; */
@@ -199,7 +227,7 @@
                 gap:20px;
                 grid-auto-flow: dense; */
             
-                .grilla{
+            /*     .grilla{
                 display: grid;
                 grid-template-columns:auto auto auto ;
                 grid-template-rows:auto auto auto ;
@@ -208,7 +236,7 @@
                height:  100vh; 
                justify-content:center;
                 align-content:flex-start;   
-            }
+            } */
 
             /*  .item1{
                 grid-column: 1/2;
@@ -223,17 +251,17 @@
  .tall{
     grid-row: span 2;
  }  */
-.layout{
+/* .layout{
 display:grid;
 grid-template-areas: 
 'header header header header'
 'main main main main'
 'footer footer footer footer';
-    }
-    .encabezado{
+    } */
+   /*  .encabezado{
         grid-area: header;
         background-color: palevioletred;
-    }
+    } */
     .principal{
         grid-area: main;
         background-color: black;
@@ -242,7 +270,53 @@ grid-template-areas:
     .pie{
         grid-area: footer;
         background-color: black;
+        list-style:none;
         text-align: center;
+        display: flex;
+       justify-content: center;
+       margin: 90px;
+    }
+
+    
+    
+    .navegador{
+        display: flex;
+        justify-content: center;
+        background-color: palevioletred;   
+        padding-left: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        list-style: none;
+        text-align: center;
+        flex-grow: initial;  
+
+    }
+    .nav-item{
+        color: gold;
+        background-color: palevioletred;  
+    }
+    .nav-item:hover{
+        transform: scale(1.5);
+        transition: all 1s;
+    } 
+
+    .nav-link{
+        color: gold;
+        text-decoration: none;
+        font-family:'Amatic SC', cursive;
+        font-size: large;
+        letter-spacing: 5px;
+        word-spacing: 5px;
+        line-height:1;
+        align-items: center;
+    }
+    .col-sm-12{
+        color: gold;
+        text-align: justify;
+    }
+    .col-sm-12{
+        max-width: 500px;
+        max-height: 500px
     }
      .encabezado__lista__item:hover{
         transform: scale(1.5);
