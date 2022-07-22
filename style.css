@@ -1,7 +1,7 @@
-*{
+/* *{
     margin: 0;
     padding: 0;
-}
+} */
 
 /* .encabezado__lista__item{
     flex:initial;
@@ -33,13 +33,13 @@
     word-spacing: 5px;
     line-height:3;} */
 
-.textoComun{
+/* .textoComun{
     color: gold ;
     text-align:center;
     line-height: 2px;
     letter-spacing: 2px;
 
-}
+} */
 
 /* .principal__arco{
     padding-left: 0;
@@ -51,12 +51,12 @@
     display:flex;
 
 } */
-.principal__arco__img{
+/* .principal__arco__img{
     flex: auto;
     text-align: center;
    /*  padding-left: 425px; */
-    margin-top: 10px;
-}
+  /*   margin-top: 10px;
+} */ */
 /* .principal__arco__img:hover{
     transform: scale(1);
     transition: all;
@@ -66,7 +66,7 @@
 /* .main{
     background-color: pink;} */
 
-
+/* 
 .layout{
     background-color: black;
     background-repeat: no-repeat;
@@ -77,10 +77,10 @@
         height: 500px;
     margin: 50px;
     text-align: center;
-    }
+    } */
 
 /* mediaqueri */
-@media screen and (max-width: 768px){
+/* @media screen and (max-width: 768px){
     .layout{
         background-color: palevioletred
 }
@@ -183,14 +183,14 @@
 
        .loguito{
             max-width: 500px;
-            max-height: 600px; }
+            max-height: 600px; } */
 
         /* .piePagina{
             text-align: center; 
            margin: 90px; 
         } */
     
-            .fotos{
+      /*       .fotos{
                 text-align: center;}
             
             .tamañoFoto{
@@ -207,7 +207,7 @@
 
                 .main{
                     text-align: center;
-                }
+                } */
                 /* GRID */
             /* .grilla__item{
                 background-color: black;
@@ -262,7 +262,7 @@ grid-template-areas:
         grid-area: header;
         background-color: palevioletred;
     } */
-    .principal{
+  /*   .principal{
         grid-area: main;
         background-color: black;
         text-align: center;
@@ -346,5 +346,5 @@ grid-template-areas:
     .item6:hover{
         transform: scale(1.5) rotate(360deg);
         transition: all 1s;
-    }  
+    }   */
   
