@@ -1,0 +1,8 @@
+@import "./base/extends";
+
+.botonVerde{
+    @include boton(green)
+}
+.botonRojo{
+    @include boton(red)
+}

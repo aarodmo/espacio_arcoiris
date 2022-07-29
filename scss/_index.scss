@@ -1,0 +1,32 @@
+.principal__arco{
+    text-align: center;
+    display:flex;
+    flex: auto;
+    padding-left: 490px; 
+    margin-top: 20px;
+    max-width: 50%;
+    max-height: 50%;
+    }
+    .textoComun{ 
+        color: gold;
+        font-family:'Amatic SC', cursive;
+        font-size: large;
+        letter-spacing: 1px;
+        word-spacing: 2px;
+        line-height:1;
+        list-style: none;
+        text-align: center;
+        display: flex;
+        justify-content: fit-content;
+        margin: 5px;
+    }
+
+    .col-sm-12{
+        color: gold;
+        text-align: justify;
+    }
+    .col-sm-12{
+        max-width: 500px;
+        max-height: 500px;
+     }
+

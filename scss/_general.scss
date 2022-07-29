@@ -3,10 +3,47 @@
     padding: 0;}
 
 body{
-    background-color: $color-principal;}
+    background-color: map-get($colores, "color-principal");
+    @include mediaQuery("tablet"){
+        background-color: rgb(139, 19, 19);
+    }
+    @include mediaQuery("mobile"){
+        background-color: blue;
+    }
+    @include mediaQuery("desktop"){
+        background-color: map-get($colores, "color-principal");
+    };
+
+display:grid;
+grid-template-areas: 
+'header header header header'
+'main main main main'
+'footer footer footer footer';
+
+}
+
+h1{
+    font-size:40px;
+    font-weight: 400;
+    color: map-get($colores, "color-titulo");
+    text-decoration: underline;
+}
+h2{
+    font-size:25px;
+    font-weight: 300;
+    color: map-get($colores, "color-titulo");
+}
+
+.principal{
+    grid-area: main;
+    background-color:map-get($colores, "color-principal");
+    text-align: center;
+    padding: 30px;
+}
 
 .navegador{
-    background-color: $color-secundario;
+    grid-area: header;
+    background-color: map-get($colores, "color-secundario");
     padding-left: 0;
     margin-top: 0;
     margin-bottom: 0;
@@ -17,34 +54,48 @@ body{
 
 .navbar-dark .navbar-nav .nav-link{
     text-decoration: none;
+    width: fit-content;
+    border-right: 1px solid black;
+    border-radius: 2px;
+    padding: 10px;
     font-size: 1.7rem;
     font-family:'Amatic SC', cursive;
     letter-spacing: 5px;
     word-spacing: 5px;
     line-height:2;
-    color:$color-texto;  }
+    color:map-get($colores,"color-texto") }
+
+.navbar-dark .navbar-nav .nav-link:hover{
+    color: map-get($colores, "color-dos") 
+}
 
 .nav-item{
     &:hover{
     transform: scale(1.5);
-    transition: all 1s;}
+    transition: all 1s;
+   }
     }
-
     .navbar-collapse{
         flex-grow: initial;}
 
     .pie{
-        background-color: black;
+        grid-area: footer;
+        background-color: map-get($colores, "color-principal");
         list-style:none;
         text-align: center;
         display: flex;
-       justify-content: center;
-       margin: 90px;}
+        justify-content: center;
+        margin: 50px;
+    }
 
        .bi-telephone{
-        color:$color-texto;
+        color:map-get($colores, "color-texto");
        }
        
+       .tamanioFoto{
+        max-width: 300px;
+        max-height: 250px;
+       }
 
 
 
