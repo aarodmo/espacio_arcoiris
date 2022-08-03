@@ -3,7 +3,7 @@
   padding: 0; }
 
 body {
-  background-color: black;
+  background-image: url(../imagen-principal/fondo1.npg.jpg);
   display: grid;
   grid-template-areas: 'header header header header' 'main main main main' 'footer footer footer footer'; }
   @media screen and (min-width: 720px) {
@@ -12,26 +12,30 @@ body {
   @media screen and (min-width: 320px) {
     body {
       background-color: blue; } }
-  @media screen and (min-width: 1020px) {
-    body {
-      background-color: black; } }
 
 h1 {
-  font-size: 40px;
+  text-align: center;
+  font-family: 'Mouse Memoirs', sans-serif;
+  font-size: 50px;
   font-weight: 400;
-  color: white;
+  color: black;
   text-decoration: underline; }
 
 h2 {
-  font-size: 25px;
-  font-weight: 300;
-  color: white; }
+  text-align: center;
+  font-family: 'Mouse Memoirs', sans-serif;
+  font-size: 40px;
+  font-weight: 350;
+  color: black; }
 
 .principal {
   grid-area: main;
-  background-color: black;
-  text-align: center;
-  padding: 30px; }
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  margin: 10px;
+  padding: 30 px;
+  color: black;
+  text-align: center; }
 
 .navegador {
   grid-area: header;
@@ -69,7 +73,6 @@ h2 {
 
 .pie {
   grid-area: footer;
-  background-color: black;
   list-style: none;
   text-align: center;
   display: flex;
@@ -77,41 +80,52 @@ h2 {
   margin: 50px; }
 
 .bi-telephone {
-  color: gold; }
+  color: black; }
 
 .tamanioFoto {
   max-width: 300px;
-  max-height: 250px; }
+  max-height: 250px;
+  vertical-align: 25px; }
 
 .principal__arco {
-  text-align: center;
+  margin-top: 25px;
+  list-style: none;
   display: flex;
-  flex: auto;
-  padding-left: 490px;
-  margin-top: 20px;
-  max-width: 50%;
-  max-height: 50%; }
+  justify-content: center;
+  text-align: center; }
 
 .textoComun {
-  color: gold;
-  font-family: 'Amatic SC', cursive;
-  font-size: large;
-  letter-spacing: 1px;
-  word-spacing: 2px;
+  color: black;
+  font-family: 'Mouse Memoirs';
+  font-size: xx-large;
+  letter-spacing: 0,5px;
+  word-spacing: 0,2px;
   line-height: 1;
   list-style: none;
   text-align: center;
-  display: flex;
-  justify-content: fit-content;
-  margin: 5px; }
+  display: grid;
+  margin: 50px; }
 
 .col-sm-12 {
-  color: gold;
+  color: black;
   text-align: justify; }
 
 .col-sm-12 {
   max-width: 500px;
   max-height: 500px; }
+
+.nube1 {
+  margin-top: 25px;
+  padding-left: 300px; }
+
+.nube4 {
+  padding-left: 450px; }
+
+.nube2 {
+  padding-right: 450px; }
+
+.nube3 {
+  padding-left: 450px; }
 
 .botonVerde {
   width: fit-content;
@@ -140,15 +154,15 @@ h2 {
   max-height: 450px;
   border-spacing: 2px; }
 
-h1 {
-  color: white;
-  text-decoration: underline; }
+.formulario {
+  justify-content: center; }
+
+.letraForm {
+  font-family: 'Mouse Memoirs', sans-serif; }
 
 .galeria__container {
-  padding: 10px;
-  margin-right: 0;
-  margin-left: auto;
-  width: fit-content; }
+  padding-top: 10px;
+  vertical-align: 5px; }
 
 .item1:hover {
   transform: scale(1.5) rotate(360deg);
@@ -176,3 +190,7 @@ h1 {
 
 .iframe {
   text-align: center; }
+
+.tamanioFoto1 {
+  text-align: center;
+  padding-top: 10px; }

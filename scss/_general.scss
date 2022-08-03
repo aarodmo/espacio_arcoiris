@@ -3,42 +3,47 @@
     padding: 0;}
 
 body{
-    background-color: map-get($colores, "color-principal");
-    @include mediaQuery("tablet"){
-        background-color: rgb(139, 19, 19);
-    }
-    @include mediaQuery("mobile"){
-        background-color: blue;
-    }
-    @include mediaQuery("desktop"){
-        background-color: map-get($colores, "color-principal");
-    };
-
+background-image: url(../imagen-principal/fondo1.npg.jpg);
 display:grid;
 grid-template-areas: 
 'header header header header'
 'main main main main'
 'footer footer footer footer';
 
-}
+
+    @include mediaQuery("tablet"){
+        background-color: rgb(139, 19, 19);
+    }
+    @include mediaQuery("mobile"){
+        background-color: blue;
+    }
+    }
+
 
 h1{
-    font-size:40px;
+    text-align: center;
+    font-family: 'Mouse Memoirs', sans-serif;
+    font-size:50px;
     font-weight: 400;
-    color: map-get($colores, "color-titulo");
+    color: black;
     text-decoration: underline;
 }
 h2{
-    font-size:25px;
-    font-weight: 300;
-    color: map-get($colores, "color-titulo");
+    text-align: center;
+    font-family: 'Mouse Memoirs', sans-serif;
+    font-size:40px;
+    font-weight: 350;
+    color: map-get($colores, "color-principal");
 }
 
 .principal{
     grid-area: main;
-    background-color:map-get($colores, "color-principal");
+    grid-template-columns:auto auto auto ;
+    grid-template-rows:auto auto auto  ;
+    margin: 10px;
+    padding: 30 px; 
+    color: map-get($colores, "color-principal");
     text-align: center;
-    padding: 30px;
 }
 
 .navegador{
@@ -80,7 +85,6 @@ h2{
 
     .pie{
         grid-area: footer;
-        background-color: map-get($colores, "color-principal");
         list-style:none;
         text-align: center;
         display: flex;
@@ -89,12 +93,13 @@ h2{
     }
 
        .bi-telephone{
-        color:map-get($colores, "color-texto");
+        color:map-get($colores, "color-principal");
        }
        
        .tamanioFoto{
         max-width: 300px;
         max-height: 250px;
+        vertical-align: 25px;
        }
 
 

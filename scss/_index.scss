@@ -1,28 +1,25 @@
 .principal__arco{
+    margin-top: 25px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
     text-align: center;
-    display:flex;
-    flex: auto;
-    padding-left: 490px; 
-    margin-top: 20px;
-    max-width: 50%;
-    max-height: 50%;
     }
     .textoComun{ 
-        color: gold;
-        font-family:'Amatic SC', cursive;
-        font-size: large;
-        letter-spacing: 1px;
-        word-spacing: 2px;
+        color: map-get($colores, "color-principal");
+        font-family:'Mouse Memoirs';
+        font-size:xx-large;
+        letter-spacing: 0,5px;
+        word-spacing: 0,2px;
         line-height:1;
-        list-style: none;
-        text-align: center;
-        display: flex;
-        justify-content: fit-content;
-        margin: 5px;
+        list-style:none;
+        text-align:center;
+        display: grid;
+        margin: 50px;
     }
 
     .col-sm-12{
-        color: gold;
+        color: map-get($colores,"color-principal");
         text-align: justify;
     }
     .col-sm-12{
@@ -30,3 +27,17 @@
         max-height: 500px;
      }
 
+        .nube1{
+        margin-top: 25px;
+        padding-left: 300px;
+        } 
+        .nube4{
+            padding-left: 450px;
+         }
+         .nube2{
+        padding-right: 450px;
+        }
+        .nube3{
+            padding-left: 450px;
+        }
+       
